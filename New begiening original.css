@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+
+}
+
+body {
+    background-color: rgb(53, 9, 30);
+}
+
+.head {
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+}
+.header {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(238, 54, 91);
+    transform: translateY(10px);
+}
+
+nav {
+    word-spacing: 2rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.7s ease;
+}
+
+nav a:hover {
+    color:crimson;
+ 
+}
+
+/* Index */
+
+#showcase {
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../Images/img.jpg");
+    background-size: cover;
+    height: 700px;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#showcase::after {
+   content: '';
+   position: absolute;
+   bottom: -4rem;
+   left: 0;
+   width: 100%;
+   height: 15vh;
+   background-color: rgb(53, 9, 30);
+   transform: skew(0, -4deg);
+   
+
+}
+
+#showcase h1 {
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+    
+}
+
+#showcase p {
+    color: white;
+    font-weight: lighter;
+}
+
+.info {
+    padding: 0 4rem;
+    width: 50%;
+}
+
+.info p, button, h1 {
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.button1 {
+    width: 150px;
+    color: white;
+    font-weight: light;
+    background-color:crimson;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+.button2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    font-weight: light;
+    background:rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+.button1:hover, .button2:hover {
+   width: 170px;
+}
+.title {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+#cities {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    margin: auto;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+#cities img {
+    width: 100%;
+    border-radius: 0 20px 0 0;
+    
+}
+#cities h3 {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding: 15px 0;
+}
+.Santorini, .Dubai, .Sidney {
+    width: 300px;
+    background-color: crimson;
+    border-radius: 0 20px 0 20px;
+    transition: all 0.5s ease;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.6);
+}
+
+.Santorini h1, .Dubai h1, .Sidney h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.Santorini h2, .Dubai h2, .Sidney h2 {
+    font-weight: 100;
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -20px;
+}
+
+.Santorini:hover, .Dubai:hover, .Sidney:hover {
+    transform: translateY(15px);
+    cursor: pointer;
+    
+}
+
+#foot {
+    height: 50px;
+    overflow: hidden;
+    background-color: black;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information { 
+    display: flex;    
+}
+.information h3{
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.icon {
+   width: 50%;
+   margin-right: 30px;
+   
+}
+
+.icon img {
+    width: 6%;
+    padding: 0 7px;
+    float: right;
+    transition: all 0.5s ease;
+}
+.title2 {
+    width: 60%;
+}
+.icon img:hover {
+    cursor: pointer;
+    transform: scale(1.4)
+}
+
+/* Login */
+
+.contain {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login {
+    margin-top: -6rem;
+    height: 470px;
+    width: 500px;
+    background-color: crimson;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3), -1px -1px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login h3 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 40px;
+    background-color: crimson;
+    border: none;
+    outline: none;
+    border-bottom: solid 3px rgb(255, 255, 255);
+    transition: border-bottom 0.5s ease;
+
+}
+
+form input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+form input:focus {
+    border-bottom: solid 3px rgb(0, 0, 0);
+
+}
+
+.login button {
+    color: rgb(255, 255, 255);
+    background-color: crimson;
+    border: solid 3px white;
+    border-radius: 10px;
+    padding: 15px 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.login button:hover {
+    transform: scale(1.1);
+}

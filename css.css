@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    
+    
+}
+
+
+header{
+    background-color: rgb(39, 37, 37);
+    color: white;
+    width: 100%;
+    margin: 0%;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    height:60px;
+}
+header h1{
+float: left;
+position: absolute;
+left: 5%;
+color: rgb(182, 20, 20);
+}
+header h2{
+    text-align: center;
+    margin-top: 6px;
+}
+header ul{
+    float: right;
+    position: absolute;
+    right: 1%;
+    top: 16%;
+    
+}
+header ul li{
+   
+    display: inline;
+    padding: 15px;
+    font-size:20px;
+    
+    
+}
+ .ho:hover{
+    cursor: pointer;
+    color: rgb(182, 20, 20);
+    background-color: slategray;
+}
+.active{
+    color: rgb(245, 111, 111);
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    header ul li{
+   
+        padding: 10px;
+        font-size:19px;
+        
+    }
+    
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+    header{
+        height: 220px;
+    }
+    header ul{
+        float: left;
+        position: absolute;
+        left:  1%;
+        top: 30%;
+        
+        
+    }
+    header ul li{
+        display: block;
+        padding: 3px;
+        margin-bottom: 2px;
+        
+    }
+    
+    
+
+}
+
+@media (max-width: 767px){
+    header{
+        height: 200px;
+        
+    }
+    header ul{
+        float: left;
+        position: absolute;
+        left:  1%;
+        top: 30%;
+        
+        
+    }
+    header ul li{
+        display: block;
+        padding: 0px;
+        margin-bottom: 3px;
+        
+    }
+    header h2{
+        margin-left: 90px;
+        font-size: 30px;
+        
+     
+        
+    }
+
+}
+@media (max-width: 500px){
+    header{
+        height: 220px;
+        position: relative;
+    }
+    header ul{
+        float: left;
+        position: absolute;
+        left:  1%;
+        top: 30%;
+        
+        
+    }
+    header ul li{
+        display: block;
+        padding: 2px;
+        
+    }
+    header h2{
+        margin-left: 90px;
+        font-size: 23px;
+        position: absolute;
+        
+        top: 19%;
+      margin-left: 15px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        
+        
+    }
+
+}
+
+/* The  End Of The Header
+************************
+*************************/
+
+.cont{
+    height: 600px;
+    
+    background-image: url("bg.jpg");
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.te{
+    color: white;
+    position: absolute;
+   top: 27%;
+    left: 6%;
+}
+.te button{
+    border: none;
+    padding :6px; 
+    width: 25%;
+    font-size: 14px;
+    transition:width 1s;
+}
+.te .bt1{
+    color: white;
+    background-color: red;
+   
+}
+.te .bt2{
+    color: rgb(7, 6, 6);
+    background-color: white;
+}
+.te button:hover{
+    width: 30%;
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .cont{
+        height: 570px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .cont{
+        height: 500px;
+    }
+
+}
+@media (max-width: 768px){
+    .cont{
+        height: 450px;
+        
+    }
+    .cont .te{
+        width: 65%;
+    }
+    .cont .te h1{
+        font-size: 30px;
+    }
+
+}
+/* last body of the body
+***********************
+************************/
+
+
+.co2{
+    height: 400px;
+    background-color: rgba(235, 1, 79, 0.418);
+    position: relative;
+    width: 100%;
+}
+.coin{
+  
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  
+  
+  height: 350px;
+  
+}
+
+ .ph1,.ph2,.ph3{
+    height: 280px;
+    width: 230px;
+    float: left;
+    background-color: rgb(195, 5, 62);
+    margin-left: 50px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+ .ph1 .im{
+    width: 230px;
+    height: 150px;
+    background-image: url("Dubai.jpg");
+    background-size: cover;
+    border-top-right-radius: 15%;
+}
+
+ 
+ 
+
+
+ .ph2 .im2{
+    width: 230px;
+    height: 150px;
+    background-image: url("Sidney.jpg");
+    background-size: cover;
+    border-top-right-radius: 15%;
+}
+
+.ph3 .im3{
+    width: 230px;
+    height: 150px;
+    background-image: url("Santorini.jpg");
+    background-size: cover;
+    border-top-right-radius: 15%;
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .co2{
+        height: 400px;
+    }
+    .coin{
+        height:400px;
+        margin-left: 10px;
+        clear: both;
+        overflow: hidden;
+        margin: auto;
+        top:9%;
+    }
+    
+    
+
+}
+@media (min-width: 874px) and (max-width: 991px){
+    .co2{
+        height: 400px;
+    }
+    .coin{
+        height: 400px;
+        left: 0%;
+        clear: both;
+        overflow: hidden;
+        margin: auto;
+        top:9%;
+    }
+}
+@media (min-width: 623px) and (max-width: 873px){
+    .co2{
+        height: 800px;
+        
+    }
+    .coin{
+        position: relative;
+        height: 600px;
+        left: 0%;
+        clear: both;
+        overflow: hidden;
+        margin: auto;
+        top:9%;
+    }
+    .ph3{
+        position: absolute;
+        top: 50%;
+    }
+
+}
+@media (max-width: 622px){
+    .co2{
+        height: 1000px;
+        
+    }
+    .coin{
+        position: relative;
+        height: 865px;
+        left: 0%;
+        clear: both;
+        overflow: hidden;
+        margin: auto;
+        top:9%;
+    }
+    .ph1,.ph2,.ph3{
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    width: auto;
+    height: 50px;
+    
+}
+footer > p{
+color: white;
+padding-top: 6px;
+top: 5%;
+
+}
